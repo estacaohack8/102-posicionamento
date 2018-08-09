@@ -25,13 +25,14 @@ header img{
     padding-right: 15px;
 }
 
-
 li{
     list-style: none;
     color: aliceblue;
     font-weight: bold;
     padding: 10px;
 }
+
+/* até aqui código já estava criado para aula */
 
 .exemplo{
     text-align: center;
@@ -42,34 +43,30 @@ li{
     width: 200px;
     display: inline-block;
     margin: 0;
-    
-    
-    
 }
+
+/* display block = é o padrão de div, p, h1...ele não deixa outro elemento ocupar sua lateral */
+/* display inline = Neste caso ele deixa outro elemento ocupar sua lateral, e fica tudo em uma linha */
+/* display inline-block = Neste caso ele deixa outro elemento ocupar sua lateral, e fica em formato original do block */
 
 li:nth-child(2){
     background-color: #f4c141;
     height: 200px;
     width: 200px;
-    
-    
-    
 }
-;
+
 li:last-child{
     background-color: blue;
     height: 200px;
     width: 200px;
-    }
+}
 
 .semana li{
     background-color: coral;
 }
-
 .semana li:nth-child(2){
     height: 180px;
 }
-
 .semana li:nth-child(3){
     height: 160px;
 }
@@ -83,6 +80,7 @@ li:last-child{
     display: flex;
 }
 
+/* para utilizar o display flex, é importante inserir essa propriedade no elemento pai, para que seus elementos filho se tornem "flexiveis" para posicionar da forma que precisar */
 .fds li{
     background-color: cornflowerblue;
     width: 200px;
@@ -91,16 +89,18 @@ li:last-child{
 
 .fds{
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-between;
 }
+/* para os <li> estamos colocando em formato de linha, e com espaço entre os elementos, ou seja, no caso são 3 elementos e eles ficam com um espaço igual entre eles. Isso é ajustado de acordo com o li */
 
 #pudim{
-    position: sticky;
+    position: fixed;
     top:20px;
     
 }
 
-.flores{
-    
-}
+/* position static= já é natural do elemento */
+/* position fixed= já é posicionado de acordo com seu viewport, ele se torna fixo no html. Não é uma boa opção responsiva */
+/* position relative= relativo a si mesmo. Quando se insere top, left, bottom ou right, o item altera sua posição com base na posição original dele */
+/* position sticky= é semelhante ao fixed porém ele só fica fixo até o seu elemento pai terminar, exemplo <div> de h=200px, ele só fica fixo em 200px */
+/* position absolute= é o rebelde. pode colocar como quiser, se não tiver um elemento pai definido, ele considera o elemento root, que é o proprio html */
