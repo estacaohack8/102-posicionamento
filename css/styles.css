@@ -25,6 +25,7 @@ header img{
     padding-right: 15px;
 }
 
+
 li{
     list-style: none;
     color: aliceblue;
@@ -32,13 +33,17 @@ li{
     padding: 10px;
 }
 
-
+.exemplo{
+    text-align: center;
+}
 .exemplo li{
     background-color: violet;
     height: 200px;
     width: 200px;
-    display: block;
-    margin-left: 20px;
+    display: inline-block;
+    margin: 0;
+    
+    
     
 }
 
@@ -47,11 +52,55 @@ li:nth-child(2){
     height: 200px;
     width: 200px;
     
+    
+    
 }
-
+;
 li:last-child{
     background-color: blue;
     height: 200px;
     width: 200px;
+    }
+
+.semana li{
+    background-color: coral;
 }
 
+.semana li:nth-child(2){
+    height: 180px;
+}
+
+.semana li:nth-child(3){
+    height: 160px;
+}
+.semana li:nth-child(4){
+    height: 140px;
+}
+.semana li:nth-child(5){
+    height: 120px;
+}
+.container ul{
+    display: flex;
+}
+
+.fds li{
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 100px;
+}
+
+.fds{
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+#pudim{
+    position: sticky;
+    top:20px;
+    
+}
+
+.flores{
+    
+}
